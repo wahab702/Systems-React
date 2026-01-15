@@ -1,0 +1,24 @@
+{
+  "name": "mern-practice",
+  "version": "1.0.0",
+  "description": "This is mern practice",
+  "keywords": [
+    "React"
+  ],
+  "license": "ISC",
+  "author": "wahab",
+  "type": "commonjs",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.3"
+  },
+  "dependencies": {
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  },
+  "browserlist": [
+    "last 2 versions"
+  ]
+}
