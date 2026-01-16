@@ -727,17 +727,59 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
+const Title = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+        children: "This is Component Composition"
+    }, void 0, false, {
+        fileName: "App.js",
+        lineNumber: 6,
+        columnNumber: 5
+    }, undefined);
+_c = Title;
+const hello = function() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+        children: "My name is Wahab"
+    }, void 0, false, {
+        fileName: "App.js",
+        lineNumber: 10,
+        columnNumber: 9
+    }, this);
+};
+const Comp = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 16,
+                columnNumber: 9
+            }, undefined),
+            Title(),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                id: "heading",
+                children: "This is functional component"
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 18,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "App.js",
+        lineNumber: 15,
+        columnNumber: 5
+    }, undefined);
+};
+_c1 = Comp;
 // const heading=React.createElement("h1" , {id:"heading"}, "Wahab making a raect");
-const headingJSX = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-    id: "heading",
-    children: "This is React by javascript"
-}, void 0, false, {
-    fileName: "App.js",
-    lineNumber: 6,
-    columnNumber: 20
-}, undefined);
+// const headingJSX = <h1 id="heading">This is React by javascript</h1>
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
-root.render(headingJSX);
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Comp, {}, void 0, false, {
+    fileName: "App.js",
+    lineNumber: 27,
+    columnNumber: 13
+}, undefined));
+var _c, _c1;
+$RefreshReg$(_c, "Title");
+$RefreshReg$(_c1, "Comp");
 
   $parcel$ReactRefreshHelpers$4931.postlude(module);
 } finally {
