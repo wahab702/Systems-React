@@ -2,24 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 
-
-const heading1 = React.createElement("h2" , 
-    {
-   id:"heading", xyz:"abc"
-} , 
-"Wahab making a React");
-        const root1 = ReactDOM.createRoot(document.getElementById("root"));
-        root1.render(heading1);
-
-const parent=React.createElement("div",{id:"Parent"},
-    React.createElement("div",{id:"child"}, 
-        React.createElement("h3",{},"I am wahab which use h3 "),
-        React.createElement("h4",{},"I am Huraira using nested div")
-    ),
-React.createElement("div",{id:"child2"}, 
-        React.createElement("h3",{},"I am using h3 nested div"),
-        React.createElement("h4",{},"I am h4 using nested div")
-    )
-)      
-  root1.render(parent);
-//   export default App.js;
+// const heading=React.createElement("h1" , {id:"heading"}, "Wahab making a raect");
+const headingJSX = <h1 id="heading">This is React by javascript</h1>
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(headingJSX);

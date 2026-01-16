@@ -9,6 +9,8 @@
   "author": "wahab",
   "type": "commonjs",
   "scripts": {
+    "dev":"parcel First.html",
+    "build" : "parcel build First.html",
     "test": "jest"
   },
   "devDependencies": {
